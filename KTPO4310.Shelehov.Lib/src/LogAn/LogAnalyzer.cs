@@ -1,24 +1,25 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿
 
 namespace KTPO4310.Shelehov.Lib.LogAn;
 
 public class LogAnalyzer
 {
-    private readonly IFileExceptionManager _fileExceptionManager;
-
-    public LogAnalyzer(IFileExceptionManager fileExceptionManager)
-    {
-        _fileExceptionManager = fileExceptionManager;
-    }
+    // private readonly IFileExceptionManager _fileExceptionManager;
+    //
+    // public LogAnalyzer(IFileExceptionManager fileExceptionManager)
+    // {
+    //     _fileExceptionManager = fileExceptionManager;
+    // }
     public bool IsValidLogFileName(string fileName)
     {
+        IFileExceptionManager fileExceptionManager = ExtensionManagerFactory.Create();
         try
         {
-            return _fileExceptionManager.IsValid(fileName);
+            return fileExceptionManager.IsValid(fileName);
         }
         catch (Exception)
         {
-            return false;
+            return false; // Если произошла ошибка, возвращаем false
         }
     }
     

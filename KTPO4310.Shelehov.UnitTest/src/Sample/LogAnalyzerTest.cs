@@ -12,8 +12,9 @@ public class LogAnalyzerTest
     {
         FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
         fakeFileExceptionManager.WillBeValid = true;
+        ExtensionManagerFactory.SetManager(fakeFileExceptionManager);
 
-        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
+        LogAnalyzer logAnalyzer = new LogAnalyzer();
         
         bool result = logAnalyzer.IsValidLogFileName("short.ext");
         
@@ -25,8 +26,9 @@ public class LogAnalyzerTest
     {
         FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
         fakeFileExceptionManager.WillBeValid = false;
+        ExtensionManagerFactory.SetManager(fakeFileExceptionManager);
 
-        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
+        LogAnalyzer logAnalyzer = new LogAnalyzer();
         
         bool result = logAnalyzer.IsValidLogFileName("short.ext");
         
@@ -38,13 +40,20 @@ public class LogAnalyzerTest
     {
         FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
         fakeFileExceptionManager.WillThrow = new Exception();
+        ExtensionManagerFactory.SetManager(fakeFileExceptionManager);
         
-        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
+        LogAnalyzer logAnalyzer = new LogAnalyzer();
         
         bool result = logAnalyzer.IsValidLogFileName("short.ext");
         
         Assert.False(result);
 
+    }
+    
+    [TearDown]
+    public void AfterEachTest()
+    {
+        ExtensionManagerFactory.SetManager(null);
     }
 }
 

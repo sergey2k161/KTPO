@@ -104,3 +104,17 @@ G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Deb
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.dll
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.pdb
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\obj\Debug\net8.0\KTPO4310.Shelehov.UnitTest.sourcelink.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Service.deps.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Service.runtimeconfig.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Service.exe
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Service.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Service.pdb

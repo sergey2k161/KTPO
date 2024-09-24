@@ -13,3 +13,14 @@ G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\ne
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.genruntimeconfig.cache
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\ref\KTPO4310.Shelehov.Lib.dll
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.sourcelink.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.csproj.AssemblyReference.cache
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.A03476F7.Up2Date

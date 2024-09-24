@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KTPO4310.Shelehov.Lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f217f4b45a72f75a5c052ecdd6af073cb2df8b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f79a0fa7385b010c1b1c489683cea8b6b54af27")]
 [assembly: System.Reflection.AssemblyProductAttribute("KTPO4310.Shelehov.Lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KTPO4310.Shelehov.Lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
