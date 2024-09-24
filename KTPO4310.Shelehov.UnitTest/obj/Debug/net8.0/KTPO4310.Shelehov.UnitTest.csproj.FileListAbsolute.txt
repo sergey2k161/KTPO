@@ -103,3 +103,4 @@ G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Deb
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.exe
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.dll
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.pdb
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.UnitTest\obj\Debug\net8.0\KTPO4310.Shelehov.UnitTest.sourcelink.json

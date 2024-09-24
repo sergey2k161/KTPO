@@ -8,60 +8,58 @@ namespace KTPO4310.Shelehov.UnitTest.Sample;
 public class LogAnalyzerTest
 {
     [Test]
-    public void IsValidLogFileName_BadExtension_ReturnsFalse()
+    public void IsValidFileName_NameSupportedExtension_ReturnsTrue()
     {
-        LogAnalyzer analyzer = new LogAnalyzer();
+        FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
+        fakeFileExceptionManager.WillBeValid = true;
+
+        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
         
-        bool result = analyzer.IsValidLogFileName("file.ShelehovSR");
-        Assert.False(result);
+        bool result = logAnalyzer.IsValidLogFileName("short.ext");
+        
+        Assert.True(result);
     }
     
     [Test]
-    public void IsValidLogFileName_GoodExtensionUppercase_ReturnsTrue()
+    public void IsValidFileName_NameSupportedExtension_ReturnsFalse()
     {
-        LogAnalyzer analyzer = new LogAnalyzer();
+        FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
+        fakeFileExceptionManager.WillBeValid = false;
+
+        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
         
-        bool result = analyzer.IsValidLogFileName("file.SHELEHOVSR");
-        Assert.False(result);
-    }
-    
-    [Test]
-    public void IsValidLogFileName_GoodExtensionLowercase_ReturnsTrue()
-    {
-        LogAnalyzer analyzer = new LogAnalyzer();
+        bool result = logAnalyzer.IsValidLogFileName("short.ext");
         
-        bool result = analyzer.IsValidLogFileName("file.shelehovsr");
-        Assert.False(result);
-    }
-    [TestCase("file.shelehovsr")]
-    [TestCase("file.SHELEHOVSR")]
-    public void IsValidLogFileName_ValidExtension_ReturnsTrue(string file)
-    {
-        LogAnalyzer analyzer = new LogAnalyzer();
-        
-        bool result = analyzer.IsValidLogFileName(file);
         Assert.False(result);
     }
 
     [Test]
-    public void IsValidLogFileName_EmptyFileName_ThrowsException()
+    public void IsValidFileName_ExtManagerThrowsException_ReturnsFalse()
     {
-        LogAnalyzer analyzer = new LogAnalyzer();
-    
-        var ex = Assert.Catch<Exception>(() => analyzer.IsValidLogFileName(""));
+        FakeFileExceptionManager fakeFileExceptionManager = new FakeFileExceptionManager();
+        fakeFileExceptionManager.WillThrow = new Exception();
         
-        StringAssert.Contains("Filename is null or empty", ex.Message);
+        LogAnalyzer logAnalyzer = new LogAnalyzer(fakeFileExceptionManager);
+        
+        bool result = logAnalyzer.IsValidLogFileName("short.ext");
+        
+        Assert.False(result);
+
     }
+}
 
-    [TestCase("file.ShelehovSR", false)]
-    [TestCase("file.dadada", true)]
-    public void IsValidLogFileName_WhenCalled_ChangeWasLastFileNameValid(string file, bool result)
-    {
-        LogAnalyzer analyzer = new LogAnalyzer();
-
-        analyzer.IsValidLogFileName(file);
-
-        Assert.AreEqual(result, analyzer.WasLastFileNameValid); 
-    }
+internal class FakeFileExceptionManager : IFileExceptionManager
+{
+    public bool WillBeValid = false;
     
+    public Exception WillThrow = null;
+    
+    public bool IsValid(string fileName)
+    {
+        if (WillThrow != null)
+        {
+            throw WillThrow;
+        }
+        return WillBeValid;
+    }
 }

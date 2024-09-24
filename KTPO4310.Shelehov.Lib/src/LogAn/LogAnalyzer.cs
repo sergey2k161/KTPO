@@ -4,21 +4,24 @@ namespace KTPO4310.Shelehov.Lib.LogAn;
 
 public class LogAnalyzer
 {
-    public bool WasLastFileNameValid { get; set; }
+    private readonly IFileExceptionManager _fileExceptionManager;
+
+    public LogAnalyzer(IFileExceptionManager fileExceptionManager)
+    {
+        _fileExceptionManager = fileExceptionManager;
+    }
     public bool IsValidLogFileName(string fileName)
     {
-        WasLastFileNameValid = false;
-        if (string.IsNullOrEmpty(fileName))
+        try
         {
-            throw new ArgumentNullException("Filename is null or empty");
+            return _fileExceptionManager.IsValid(fileName);
         }
-
-        if (fileName.EndsWith(".ShelehovSR", StringComparison.CurrentCultureIgnoreCase))
+        catch (Exception)
         {
             return false;
         }
-
-        WasLastFileNameValid = true;
-        return true;
     }
+    
+    
 }
+
