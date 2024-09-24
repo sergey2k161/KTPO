@@ -1,0 +1,14 @@
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.exe
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.deps.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.runtimeconfig.json
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.pdb
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.GeneratedMSBuildEditorConfig.editorconfig
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.AssemblyInfoInputs.cache
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.AssemblyInfo.cs
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.csproj.CoreCompileInputs.cache
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\refint\KTPO4310.Shelehov.Lib.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.pdb
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\KTPO4310.Shelehov.Lib.genruntimeconfig.cache
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Lib\obj\Debug\net8.0\ref\KTPO4310.Shelehov.Lib.dll
