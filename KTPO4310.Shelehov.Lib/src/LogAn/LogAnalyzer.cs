@@ -2,8 +2,9 @@
 
 namespace KTPO4310.Shelehov.Lib.LogAn;
 
-public class LogAnalyzer
+public class LogAnalyzer : ILogAnalyze
 {
+    public event LogAnalyzerAction? Analyzed = null;
     public bool IsValidLogFileName(string fileName)
     {
         IFileExceptionManager fileExceptionManager = ExtensionManagerFactory.Create();
@@ -51,9 +52,19 @@ public class LogAnalyzer
                 emailService.SendEmail(to: "someone@somewhere.com", subject: "Невозможно вызвать веб-сервис", body: e.Message);
             }
         }
+
+        if (Analyzed != null)
+        {
+            Analyzed();
+        }
     }
-
-
     
+    protected void RaiseAnalyzedEvent()
+    {
+        if (Analyzed != null)
+        {
+            Analyzed();
+        }
+    }
 }
 

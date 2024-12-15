@@ -57,7 +57,6 @@ public class LogAnalyzerTest
         WebServiceFactory.SetManager(null);
         EmailServiceFactory.SetManager(null);
     }
-
     
     [Test]
     public void Analyze_WebServiceThrows_SendsEmail()
@@ -77,6 +76,21 @@ public class LogAnalyzerTest
         StringAssert.Contains(expected: "someone@somewhere.com", actual: mockEmail.To);
         StringAssert.Contains(expected: "это подделка", actual: mockEmail.Message);
         StringAssert.Contains(expected: "Невозможно вызвать веб-сервис", actual: mockEmail.Subject);
+    }
+
+    [Test]
+    public void Analyze_WhenAnalyzed_FiredEvent()
+    {
+        bool analyzedFired = false;
+
+        LogAnalyzer logAnalyzer = new LogAnalyzer();
+        logAnalyzer.Analyzed += delegate()
+        {
+            analyzedFired = true;
+        };
+        
+        logAnalyzer.Analyze("short.ext");
+        Assert.True(analyzedFired);
     }
 }
 
