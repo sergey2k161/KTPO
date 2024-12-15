@@ -54,6 +54,29 @@ public class LogAnalyzerTest
     public void AfterEachTest()
     {
         ExtensionManagerFactory.SetManager(null);
+        WebServiceFactory.SetManager(null);
+        EmailServiceFactory.SetManager(null);
+    }
+
+    
+    [Test]
+    public void Analyze_WebServiceThrows_SendsEmail()
+    {
+        FakeWebService stubWebService = new FakeWebService();
+        WebServiceFactory.SetManager(stubWebService);
+        stubWebService.WillTrowWebError = new Exception(message: "это подделка");
+        
+        FakeEmailService mockEmail = new FakeEmailService();
+        EmailServiceFactory.SetManager(mockEmail);
+        
+        LogAnalyzer log = new LogAnalyzer();
+        string tooShortFileName = "abc.ext";
+        
+        log.Analyze(tooShortFileName);
+        
+        StringAssert.Contains(expected: "someone@somewhere.com", actual: mockEmail.To);
+        StringAssert.Contains(expected: "это подделка", actual: mockEmail.Message);
+        StringAssert.Contains(expected: "Невозможно вызвать веб-сервис", actual: mockEmail.Subject);
     }
 }
 
@@ -70,5 +93,21 @@ internal class FakeFileExceptionManager : IFileExceptionManager
             throw WillThrow;
         }
         return WillBeValid;
+    }
+}
+
+internal class FakeWebService : IWebService
+{
+    public string LastError;
+    
+    public Exception? WillTrowWebError = null;
+
+    public void LogError(string message)
+    {
+        if (WillTrowWebError != null)
+        {
+            throw WillTrowWebError;
+        }
+        LastError = message;
     }
 }
