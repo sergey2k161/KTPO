@@ -1,13 +1,23 @@
-﻿using KTPO4310.Shelehov.Service.LibConfig;
+﻿using KTPO4310.Shelehov.Lib.Common;
+using KTPO4310.Shelehov.Lib.SampleCommands;
+using KTPO4310.Shelehov.Service.LibConfig;
+using KTPO4310.Shelehov.Service.WindsorInstallers;
 
-namespace KTPO4310.Ivanov.Service
+namespace KTPO4310.Shelehov.Service;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        CastleFactory.container.Install(
+            new SampleCommandInstaller(),
+            new ViewInstaller());
+
+        for (int i = 0; i < 5; i++)
         {
-            LogAnalyzerConfig logAnalyzerConfig = new LogAnalyzerConfig();
-            logAnalyzerConfig.TestFiles(); // Вызов метода для проверки файлов
+            ISampleCommands someCommand = CastleFactory.container.Resolve<ISampleCommands>();
+            someCommand.Execute();
         }
     }
 }
+

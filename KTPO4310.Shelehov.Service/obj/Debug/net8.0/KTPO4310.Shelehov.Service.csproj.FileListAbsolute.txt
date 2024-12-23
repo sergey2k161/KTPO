@@ -29,3 +29,9 @@ G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debu
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\KTPO4310.Shelehov.Lib.pdb
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\obj\Debug\net8.0\KTPO4310.Shelehov.Service.csproj.AssemblyReference.cache
 G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\obj\Debug\net8.0\KTPO4310.31FB2994.Up2Date
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\Castle.Core.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\Castle.Windsor.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+G:\All Projects\C#\KTPO4310.Shelehov.UnitTest\KTPO4310.Shelehov.Service\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
